@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://sachet.dev/sitemap.xml
-Host: https://sachet.dev

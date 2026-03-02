@@ -2,7 +2,7 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["next", "main", "master"]
+    branches: ["next", "main", "master", "develop"]
   workflow_dispatch:
 
 permissions:
@@ -73,6 +73,7 @@ jobs:
           path: ./out
 
   deploy:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

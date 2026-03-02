@@ -3,8 +3,8 @@ import { Navigation } from "@/components/navigation";
 
 // Placeholder data - in a real app this would come from a CMS or API
 const photos = [
-    { id: 1, src: "https://drive.google.com/uc?export=view&id=1DnhrjQDr-XLq0Z09Bo66UHRR7laNLy3s", aspectRatio: "aspect-[4/3]", alt: "Old Mill" },
-    { id: 2, src: "https://drive.google.com/uc?export=view&id=1n-aewVf6lL3nvzC5kSGRaqLNSI4YoxGr", aspectRatio: "aspect-[4/3]", alt: "Statue" },
+    { id: 1, src: "/images/photography/old_mill.jpg", aspectRatio: "aspect-[4/3]", alt: "Old Mill" },
+    { id: 2, src: "/images/photography/statue.jpg", aspectRatio: "aspect-[4/3]", alt: "Statue" },
 ];
 
 export default function PhotographyPage() {

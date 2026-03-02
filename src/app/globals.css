@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  /* Gruvbox Material Medium Light */
+  --background: #fbf1c7;
+  --foreground: #282828;
+
+  --color-gruv-red: #ea6962;
+  --color-gruv-orange: #e78a4e;
+  --color-gruv-yellow: #d8a657;
+  --color-gruv-green: #a9b665;
+  --color-gruv-aqua: #89b482;
+  --color-gruv-blue: #7daea3;
+  --color-gruv-purple: #d3869b;
+}
+
+.dark {
+  /* Gruvbox Material Medium Dark */
+  --background: #282828;
+  --foreground: #ebdbb2;
+
+  --color-gruv-red: #ea6962;
+  --color-gruv-orange: #e78a4e;
+  --color-gruv-yellow: #d8a657;
+  --color-gruv-green: #a9b665;
+  --color-gruv-aqua: #89b482;
+  --color-gruv-blue: #7daea3;
+  --color-gruv-purple: #d3869b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-gruv-red: var(--color-gruv-red);
+  --color-gruv-orange: var(--color-gruv-orange);
+  --color-gruv-yellow: var(--color-gruv-yellow);
+  --color-gruv-green: var(--color-gruv-green);
+  --color-gruv-aqua: var(--color-gruv-aqua);
+  --color-gruv-blue: var(--color-gruv-blue);
+  --color-gruv-purple: var(--color-gruv-purple);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono), monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
